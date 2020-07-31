@@ -24,15 +24,46 @@ What you'll first see when opening the command line is a prompt similar to `usr$
 
 ### Directories and files 
 
+The way your files are organized in the command line interface is exactly the same as they would be in 'Finder' or 'My Documents', just the way you access them is different. What you would normally experience in the GUI is a physical appearance of a folder, but for the command line, we call folders 'directories'. When we opened the command line, we started in our home directory. 
 
+One of the most important concepts to understand is the *absolute file path* of a directory or file. It is as the name suggests - a path to get to your directory of interest. Use the `pwd` command (stands for 'print working directory') to see the absolute file path of the current directory.
+
+```
+username$ pwd
+/Users/username
+```
+
+For many command line programs and R, you will need to specify the absolute file path for your files that you're interested in analyzing.
+
+Now lets get comfortable with directories and filepaths by doing a small exercise. We will create a new directory with `mkdir` and then go into that directory and display the absolute file path. Note: 'spaces' in files and directories complicate things slightly, so it's best practice to just avoid them and use an underscore instead. 
+
+```
+username$ mkdir new_directory # creates a new directory called 'new_directory'
+username$ cd new_directory # changes our current directory to 'new_directory'  
+# It is important to mention that when we can only call 'new_directory' like this if it is located in our current directory, or else we'd have to specify the absolute file path of 'new_directory'
+```
+
+Now we'll explore our new directory. 
+
+```
+username$ ls # lists files in current directory
+
+# it is blank which means there are no files in here, lets make one 
+username$ nano
+```
+
+Welcome to nano, a basic text editor accessible in the command line. 
+
+Insert nano picture
 
 directories = folders
 ls
 ch
 mkdir
+head, tail, cat, nano
 etc.
 
-
+Unix command cheat sheet:
 
 
 
