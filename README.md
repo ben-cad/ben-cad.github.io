@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome To My Programming Tutorial!
 
-You can use the [editor on GitHub](https://github.com/ben-cad/ben-cad.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+When I started my graduate school journey, I had no previous experience coding with any programming language. In order to complete my microbiome-related thesis, I really needed to learn how all this crazy text works. On this page, I will share some insight on how to use basic command line functions, particularly focusing on teaching skills that will assist in bioinformatic research. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I will mostly cover Unix basics, R and R Studio, Python (in particular, BioPython), and some examples running some common bioinformatic software for each programming language. Hopefully I can share some useful tips and tricks that I wished I knew when started my bioinformatic journey!
 
 ### Markdown
 
