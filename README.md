@@ -4,6 +4,16 @@ When I started my graduate school journey, I had no previous experience coding w
 
 I will mostly cover Unix basics, R and R Studio, Python (in particular, BioPython), and some examples running some common bioinformatic software for each programming language. Hopefully I can share some useful tips and tricks that I wished I knew when started my bioinformatic journey!
 
+## Why Should You Learn This?
+
+While it is true that there are plenty of graphical user interfaces (GUIs) and websites that can complete various bioinformatic tasks for you, learning how to use these programs on the command line can take your research to the next level. 
+
+Using command line based programs instead of GUIs will:
+- give you access to more software, providing you with significantly more options for data generation and analysis
+- allow you to run analysis on a larger scale, in a more rapid, efficient, and reproducible fashion
+- provide you with the option to run your analysis on high performance compute clusters, or cloud servers, to free up your computer's RAM for other tasks
+- enlighten you with the satisfaction of troubleshooting coding errors :laughing:  
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
