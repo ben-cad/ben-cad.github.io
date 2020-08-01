@@ -12,7 +12,7 @@ Using command line based programs instead of GUIs will:
 - give you access to more software, providing you with significantly more options for data generation and analysis
 - allow you to run analysis on a larger scale, in a more rapid, efficient, and reproducible fashion
 - provide you with the option to run your analysis on high performance compute clusters, or cloud servers, to free up your computer's RAM for other tasks
-- enlighten you with the satisfaction of troubleshooting coding errors :laughing:  
+- enlighten you with the satisfaction of troubleshooting coding errors  
 
 ## Command Line/Unix Basics
 
