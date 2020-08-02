@@ -56,6 +56,10 @@ Welcome to nano, a basic text editor accessible in the command line.
 
 ![image of nano](images/nano.png)
 
+This functions like any other basic text editor, except you can only use your keyboard, so no cursor to move your way around the document! 
+Make a document similar the one shown in the picture and we'll go through a few commands to explore the text file we made. 
+
+
 directories = folders
 ls
 ch
