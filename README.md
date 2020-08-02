@@ -55,7 +55,7 @@ username$ nano
 Welcome to nano, a basic text editor accessible in the command line. 
 
 ![image of nano]
-(https://ben-cad.github.com/images/nano.png)
+(https://github.com/ben-cad/ben-cad.github.io/master/images/nano.png)
 
 
 directories = folders
