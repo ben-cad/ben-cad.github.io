@@ -54,7 +54,9 @@ username$ nano
 
 Welcome to nano, a basic text editor accessible in the command line. 
 
-Insert nano picture
+![image of nano]
+(https://ben-cad.github.com/images/nano.png)
+
 
 directories = folders
 ls
