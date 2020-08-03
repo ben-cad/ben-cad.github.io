@@ -22,7 +22,7 @@ First, we need to access a Bash Shell (Bash = Unix command language; Shell = com
 
 What you'll first see when opening the command line is a prompt similar to `usr$` that usually corresponds to whatever your login username is on your computer. This prompt will change based on the directory you are in, which we will discuss in the next section!
 
-### Directories and files 
+### Exploring Directories and Files 
 
 The way your files are organized in the command line interface is exactly the same as they would be in 'Finder' or 'My Documents', just the way you access them is different. What you would normally experience in the GUI is a physical appearance of a folder, but for the command line, we call folders 'directories'. When we opened the command line, we started in our home directory. 
 
@@ -33,7 +33,7 @@ username$ pwd
 /Users/username
 # username is our home directory, remember this!
 ```
-
+*Note, whenever you put a # in code, everything after it on that line will be ignored!*
 For many command line programs and R, you will need to specify the absolute file path for your files that you're interested in analyzing.
 
 Now lets get comfortable with directories and filepaths by doing a small exercise. We will create a new directory with `mkdir` and then go into that directory and display the absolute file path. Note: 'spaces' in files and directories complicate things slightly, so it's best practice to just avoid them and use an underscore instead. 
@@ -157,5 +157,65 @@ mv | can be used to move files to new directories and rename files
 cp | copies files to a new directory
 rm | deletes a file
 rmdir | deletes an empty directory
+
+### Downloading and Using Command Line Bioinformatic Programs
+
+Most command line based softwares that you will use for biological analysis will be writted in either a Unix or a Python language. The python interpreter should be installed by default on your computer, but if you do find it missing or you're having issues, you can find the download [here](https://www.python.org/downloads/).
+
+#### Unix-Based Executables
+
+First we will go through installing and using Unix-based programs. Lets use MUSCLE alignment software as a teaching example; MUSCLE is an extremely popular multiple sequence alignment tool that is quick and easy to use. Download the appropriate version of MUSCLE [here](https://drive5.com/muscle/downloads.htm).
+
+Now that you have downloaded the file, it is likely a compressed file as .tar or .tar.gz and we need to extract this file in order to use it. 
+
+First, change into the directory where the MUSCLE download is and we will extract it.
+```
+# if the file is .tar
+username$ tar -xf filename
+# if the file is .tar.gz
+username$ tar -zxf filename 
+```
+
+Technically, MUSCLE is now usable as an 'executable'! There should always be installation instructions for different programs on their respective download websites (some are simple like MUSCLE, and some take a little more work). There's a couple more things we should learn about how the command line works with executables. 
+
+Remember how I mentioned earlier in the tutorial that we can only call for certain files or directories if it's somewhere contained in the current directory or we must specify the absolute file path right? The same applies to executables. We need to tell our computer where to find the executable before it can run it. Lets first change the name of our executable to make things easier and then try to run it.
+```
+username$ mv muscle_versionnumberx muscle # renaming complicated file name simply to muscle
+username$ muscle
+-bash: muscle: command not found
+```
+
+What? It didn't work, even though the file is in our current directory! *Usually, just by calling executables with no additional arguments, it opens the help output and is a great way to check if everything is installed properly.*
+We have two options on how to run this file. Notice how we never had any executables show up in any of the directories we've explored previously for simple commands like `head` or `cd`? These commands are in fact executables, but they weren't located in our current working directories when we called for them. They worked because they were located in the `PATH` *environmental variable*. Try the code below to see what `PATH` is on your machine, and try to guess what this means!
+
+```
+username$ echo $PATH
+```
+
+The output of this code shows a list of absolute file paths that your computer searches for executables that you call. Cool right!? Now that we understand this, we have three options on how to run our MUSCLE executable:
+
+1. We can use `mv` to move MUSCLE to a directory contained in `PATH`
+2. We can change `PATH` by adding another directory to it
+3. Use a different way to call MUSCLE 
+
+You should have the tools to complete option #1 by using `mv`. Option #2 isn't the best choice most of the time, but can be useful later in your bioinformatic career when running very large scale analyses with multiple programs. See below on how to add absolute file paths on to `PATH`. *NOTE THIS IS TEMPORARY AND WILL BE RESET ONCE YOU CLOSE THE COMMAND LINE INTERFACE*
+```
+username$ export PATH=$PATH:/absolute/path/to/MUSCLE
+username$ echo $PATH # to check if it worked
+username$ muscle 
+```
+Calling MUSCLE here should give you the help output or basic usage guidelines, if not, your absolute path above was probably incorrect (try using pwd to ensure you had it right!)
+
+Option #3 is the most simple, and is what I use most commonly for programs relying on a single executable file. All you have to do is change to the directory containing your executable file and type `./` before calling your executable. 
+```
+username$ cd directory/containing/muscle
+username$ ./muscle
+```
+
+Remember `~` is home directory; `..` is one directory up (the parent directory), and now `.` is the current directory. So `./` basically means check for a file in the current directory (`.`), and ignore 'PATH' (`/`). 
+
+Congratulations! With a little practice, you should be a master using Unix executables! This is half the battle though, since there are many great bioinformatic programs that are based on the Python language. 
+
+#### Python Based Bioinformatic Programs
 
 
