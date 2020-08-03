@@ -16,10 +16,10 @@ Using command line based programs instead of GUIs will:
 
 ## Quick Links
 
-[Command Line/Unix Basics](##-Command-Line/Unix-Basics)
- - [Exploring Directories and Files](###-Exploring-Directories-and-Files)
- - [Downloading and Using Command Line Bioinformatic Programs](###-Downloading-and-Using-Command-Line-Bioinformatic-Programs)
- - [Unix-Based Executables](####-Unix-Based-Executables)
+[Command Line/Unix Basics](https://github.com/ben-cad/ben-cad.github.io/blob/master/README.md#command-lineunix-basics)
+ - [Exploring Directories and Files](https://github.com/ben-cad/ben-cad.github.io/blob/master/README.md#exploring-directories-and-files)
+ - [Downloading and Using Command Line Bioinformatic Programs](https://github.com/ben-cad/ben-cad.github.io/blob/master/README.md#downloading-and-using-command-line-bioinformatic-programs)
+ - [Unix-Based Executables](https://github.com/ben-cad/ben-cad.github.io/blob/master/README.md#unix-based-executables)
 
 ## Command Line/Unix Basics
 
