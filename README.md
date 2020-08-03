@@ -138,29 +138,24 @@ username$ cd ~ # change back into our home directory, ~ represents the home dire
 username$ rmdir new_directory # to remove a directory, it must be empty to do this however
 ```
 
-Congratulations! This is the very basic commands of a Unix-based command line. The best advice I can give is to practice with these, and get comfortable with the organization and structure of the command line interface. I've found it easiest when starting out to think of directories as folders instead! Once you're confident with these easy functions, start exploring extra arguments for them like I showed with `grep` earlier if you're curious!
+Congratulations! These are the very basic commands of a Unix-based command line. The best advice I can give is to practice with these, and get comfortable with the organization and structure of the command line interface. I've found it easiest when starting out to think of directories as folders instead! Once you're confident with these easy functions, start exploring extra arguments for them like I showed with `grep` earlier if you're curious!
 
-Unix command cheat sheet:
+*Unix command cheat sheet:*
 
-
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+Command | Function
+------- | -------
+pwd | displays the current directory
+mkdir | creates a new directory
+cd | change directory ('~' represents home directory; '..' is the parent directory)
+ls | lists all files in the directory
+nano | opens up the nano text editor
+head | displays the first ten lines of a file
+tail | displays the last ten lines of a file
+cat | displays all the text in a file
+grep | searches for patterns in a file 
+mv | can be used to move files to new directories and rename files
+cp | copies files to a new directory
+rm | deletes a file
+rmdir | deletes an empty directory
 
 
