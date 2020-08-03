@@ -14,6 +14,13 @@ Using command line based programs instead of GUIs will:
 - provide you with the option to run your analysis on high performance compute clusters, or cloud servers, to free up your computer's RAM for other tasks
 - enlighten you with the satisfaction of troubleshooting coding errors  
 
+## Quick Links
+
+[Command Line/Unix Basics](## Command Line/Unix Basics)
+ - [Exploring Directories and Files](### Exploring Directories and Files)
+ - [Downloading and Using Command Line Bioinformatic Programs](### Downloading and Using Command Line Bioinformatic Programs)
+ - [Unix-Based Executables](#### Unix-Based Executables)
+
 ## Command Line/Unix Basics
 
 Luckily, the basics of Unix is extremely easy to get comfortable with after some practice! There's very little to learn until you can start running some programs for your analysis.
